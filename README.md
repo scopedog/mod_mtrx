@@ -13,9 +13,7 @@ The algorithms presented in this project perform faster than those for Galois Fi
 
 - For $a \times b = c$, where $a, b, c \in \mathbb{Z}$:
   - If $a$ is **odd**, there exists a $d$ such that  
-    ```math
-    d \times c = b, \quad \text{i.e.,} \quad d = a^{-1}
-    ```
+    $$d \times c = b, \quad \text{i.e.,} \quad d = a^{-1}$$
   - However, if $a$ is **even**, there is **no** $d$ such that  
     ```math
     d = a^{-1} \quad \text{and} \quad d \times c = b
