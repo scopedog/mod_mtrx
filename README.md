@@ -11,19 +11,19 @@ Therefore, we propose algorithms based on modular arithmetic as an alternative a
 
 The algorithms presented in this project perform faster than those for Galois Fields. However, there is an important trade-off:
 
-- For \(a \times b = c\), where \(a, b, c \in \mathbb{Z}\):
-  - If \(a\) is **odd**, there exists a \(d\) such that  
+- For $a \times b = c$, where $a, b, c \in \mathbb{Z}$:
+  - If $a$ is **odd**, there exists a $d$ such that  
     \[
     d \times c = b, \quad \text{i.e.,} \quad d = a^{-1}
     \]
-  - However, if \(a\) is **even**, there is **no** \(d\) such that  
+  - However, if $a$ is **even**, there is **no** $d$ such that  
     \[
     d = a^{-1} \quad \text{and} \quad d \times c = b
     \]
 
-In other words, elements that are **odd** (i.e., coprime with \(2^n\)) have a **multiplicative inverse**, while **even** elements do not — just as in modular arithmetic modulo a power of 2.
+In other words, elements that are **odd** (i.e., coprime with $2^n$) have a **multiplicative inverse**, while **even** elements do not — just as in modular arithmetic modulo a power of 2.
 
-To arreviate this restriction, we included an example solution for an even \(a\) such that \(a / 2\) is odd (ex. 2, 6, 10,....)
+To arreviate this restriction, we included an example solution for an even $a$ such that $a / 2$ is odd (ex. 2, 6, 10,....).
 
 
 ---
