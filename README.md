@@ -15,9 +15,7 @@ The algorithms presented in this project perform faster than those for Galois Fi
   - If $a$ is **odd**, there exists a $d$ such that  
     $$d \times c = b, \quad \text{i.e.,} \quad d = a^{-1}$$
   - However, if $a$ is **even**, there is **no** $d$ such that  
-    ```math
-    d = a^{-1} \quad \text{and} \quad d \times c = b
-    ```
+    $$d = a^{-1} \quad \text{and} \quad d \times c = b$$
 
 In other words, elements that are **odd** (i.e., coprime with $2^n$) have a **multiplicative inverse**, while **even** elements do not — just as in modular arithmetic modulo a power of 2.
 
