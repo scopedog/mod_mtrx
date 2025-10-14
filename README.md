@@ -3,7 +3,7 @@ Matrix and Vector Calculation with 8-, 16-, or 32-bit Modular Arithmetic
 
 ## Background
 
-This project demonstrates that modular arithmetic with modulus \(2^n\) — such as \(2^8\), \(2^{16}\), or \(2^{32}\) — can be utilized as an alternative to Galois (finite) fields.  
+This project demonstrates that modular arithmetic with modulus $2^n$ — such as $2^8$, $2^{16}$, or $2^{32}$ — can be utilized as an alternative to Galois (finite) fields.  
 Fast processing algorithms in Galois Fields using SIMD (AVX, NEON, etc.) and their applications to Erasure Coding (EC) are patented by StreamScale Inc.  
 We believe it is almost impossible to achieve high-performance data processing in Galois Fields using SIMD without infringing on their patents.  
 
