@@ -40,7 +40,15 @@ holds. In other words,
 $$b = (f \times c) >> 1$$
 
 This indicates that even if $a$ is even, it is possible to obtain $b$ with $c$ and $f$.
-However, there arises a question "What is the value of the highest bit of $b$ in $n$-bit modular arithmetic obtained from the above way?" Suppose $f \times c = g$ with 32-bit modulo, the value of the highest bit of $g >> 1$ automatically becomes zero. However, it should not be always zero. To determine the correct value of the highest bit of $g >> 1$, we beforehand save the highest bit of original $b$ as $b_{parity}$, i.e., $b_{parity} = b \ \& \ 0x80000000$. Then, we get $b$ as:
+
+However, there arises a question "What is the value of the highest bit of $b$ in $n$-bit modular arithmetic obtained from the above way?" Suppose $f \times c = g$ with 32-bit modulo, the value of the highest bit of $g >> 1$ automatically becomes zero.
+However, it should not be always zero.
+
+To determine the correct value of the highest bit of $g >> 1$, we beforehand save the highest bit of original $b$ as $b_{parity}$, i.e.,
+
+$$b_{parity} = b \ \& \ 0x80000000$$
+
+Then, we get $b$ as:
 
 $$b =  ((f \times c) >> 1)\ |\ b_{parity}$$
 
