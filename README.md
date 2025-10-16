@@ -46,14 +46,14 @@ However, it should not be always zero.
 
 To determine the correct value of the highest bit of $g >> 1$, we beforehand save the highest bit of original $b$ as $b_{parity}$, i.e.,
 
-$$b_{parity} = b \text{\&} 0x80000000$$
+$$b_{parity} = b \text{&amp;} 0x80000000$$
 
 Then, we get $b$ as:
 
 $$b =  ((f \times c) >> 1) | b_{parity}$$
 
 Thus for $a \times b = c$ with even $a$, we can obtain $b$ from $a$, $c$ and $b_{parity}$.
-However, there arises another question. Do we really use $b_{parity}$, which is a part of $b$, to obtain $b$? If we use this arithmetic for cryptographic matrix multiplicaton such as Hill Cipher, is it safe to use $b_{parity}$? How should we store the values of $b_{parity}$? Good questions. It will be still safe to use $b_{parity}$ as long as they are also encrypted and are capsuled together with the other encrypted data. Then, what about $b_{parity}$ of $b_{parity}$s? Don't worry, for $b_{parity}$ of $b_{parity}$s, we use $b$ such that its highest bit is always zero, in other words, no $b_{parity}$ of $b_{parity}$s is necessary.
+However, there arises another question. Do we really use $b_{parity}$, which is a part of $b$, to obtain $b$? If we use this arithmetic for cryptographic matrix multiplicaton such as Hill Cipher, is it safe to use $b_{parity}$? How should we store the values of $b_{parity}$? Good questions. It will be still safe to use $b_{parity}$ as long as they are also encrypted and are capsuled together with the other encrypted data. Then, what about $b_{parity}$ of $b_{parity}$ s? Don't worry, for $b_{parity}$ of $b_{parity}$ s, we use $b$ such that its highest bit is always zero, in other words, no $b_{parity}$ of $b_{parity}$ s is necessary.
 
 
 ---
