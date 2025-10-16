@@ -46,7 +46,7 @@ However, it should not be always zero.
 
 To determine the correct value of the highest bit of $g >> 1$, we beforehand save the highest bit of original $b$ as $b_{parity}$, i.e.,
 
-$$b_{parity} = b \text{&amp;} 0x80000000$$
+$$b_{parity} = b \text{\&amp;} 0x80000000$$
 
 Then, we get $b$ as:
 
